@@ -9,8 +9,7 @@ import numpy as np
 
 def bigsmall_partfrac(eigenvec,masses,thresh=1):
     """
-    function to calculate participation fraction of big and small particles
-        in colloidal glass
+    function to calculate participation fraction of big and small particles in colloidal glass
     eigenvec=eigenvectors
     masses=1D array of particles masses from avg. position table
     thresh=cutoff for big and small particles in masses
