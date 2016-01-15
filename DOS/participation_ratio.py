@@ -13,7 +13,7 @@ def participation_ratio(eigenvec):
     Calculate participation ratio from eigenvectors of DOS calculation
     
     inputs:
-    eigenvec = eigenvectors of system
+    eigenvec = eigenvectors of system (2N x 2N)
 
     """
     N=len(eigenvec[:,0])/2.0
