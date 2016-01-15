@@ -9,6 +9,7 @@ import numpy as np
 
 def springcalculation(kmat,x,y,mass):
     """
+    code to calculate springs between particles from spring constant matrix
     kmat = spring constant matrix
     x,y,mass = x positions, y positions, and masses from average position table
     """
