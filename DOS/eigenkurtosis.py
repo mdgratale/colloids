@@ -3,17 +3,18 @@
 Created on Fri Nov 13 11:04:08 2015
 
 @author: mgratale
-calculate kurtosis of eigenmodes
-inputs: displacement matrix/array disp (T x dim x N)
-        eigvec=eigenvectors
-        eigenval=eigenvalues
 """
 
 import numpy as np
 import scipy.stats as sps
 
 def eigenkurtosis(disp,eigvec,eigenval):
-        
+    """
+    calculate kurtosis of eigenmodes
+    inputs: displacement matrix/array disp (T x dim x N)
+            eigvec=eigenvectors
+            eigenval=eigenvalues
+    """        
     [numt,dim,numpart]=disp.shape
     nfreq=len(eigenval)
     
