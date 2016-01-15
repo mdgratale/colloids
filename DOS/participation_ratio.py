@@ -2,7 +2,6 @@
 """
 Created on Fri Nov 13 16:30:53 2015
 
-Calculate participation ratio from eigenvectors of DOS calculation
 Inputs: eigenvectors eigenvec
 @author: mgratale
 """
@@ -10,7 +9,13 @@ Inputs: eigenvectors eigenvec
 import numpy as np
 
 def participation_ratio(eigenvec):
+    """
+    Calculate participation ratio from eigenvectors of DOS calculation
     
+    inputs:
+    eigenvec = eigenvectors of system
+
+    """
     N=len(eigenvec[:,0])/2.0
     ev2=eigenvec*eigenvec  #numerator
     ev4=ev2*ev2  #denominator
